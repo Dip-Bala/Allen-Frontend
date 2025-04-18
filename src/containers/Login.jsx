@@ -6,7 +6,7 @@ export default function Login({ setIsLogin }) {
         setIsLogin(login => !login);
     }
     return (
-        <div className="absolute bg-white shadow-xl/20  h-full w-[500px] right-0 top-0 p-12 pt-20 flex flex-col justify-between">
+        <div className="absolute bg-white shadow-xl/20 h-screen w-[500px] right-0 top-0 p-12 pt-20 flex flex-col justify-between">
             <div className="flex gap-6">
                 <button className="w-5 h-5" onClick={showLogin}><img src="./src/assets/close.png" alt="cancel" /></button>
                 <div className="w-auto h-6 flex">
@@ -19,8 +19,8 @@ export default function Login({ setIsLogin }) {
                 <button className="bg-gray-200 rounded-3xl p-2.5 w-full hover:border-black text-gray-400 font-semibold cursor-not-allowed">Send OTP</button>
                 <div className="text-center">or</div>
                 <div className="flex flex-col gap-4">
-                    <button className="border-2 border-blue-600 rounded-3xl p-2.5 w-full hover:bg-gray-300 text-black font-medium ">Continue with Form ID</button>
-                    <button className="border-2 border-blue-500 rounded-3xl p-2.5 w-full hover:bg-gray-300 text-black font-medium ">Continue with Email ID</button>
+                    <button className="border-2 border-blue-600 rounded-3xl p-2.5 w-full hover:bg-gray-300 text-black font-medium cursor-pointer">Continue with Form ID</button>
+                    <button className="border-2 border-blue-500 rounded-3xl p-2.5 w-full hover:bg-gray-300 text-black font-medium cursor-pointer">Continue with Email ID</button>
 
                 </div>
             </form>

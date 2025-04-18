@@ -6,3 +6,9 @@
 -- added some good functionality too
 -- one more day and it should be finished 
 -- good job D
+
+19/04/2025 3:06 am
+
+-- Almost done with the whole layout 
+-- turns out 1 more day is needed
+-- Need to add more functionality -> responsiveness, hover, onclick etc

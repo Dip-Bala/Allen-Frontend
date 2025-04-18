@@ -27,13 +27,13 @@ export default function Layout() {
         <Scholarship />
         <OnlineCourses />
         <FreeTools />
-        {/* <Features/>
-        <Trending/>
+        <Features/>
+        {/* <Trending/>
         <Results/>
         <Advantages/>
-        <Testimonial/>
+        <Testimonial/> */}
         <Feedback/>
-        <Footer/> */}
+        <Footer/>
       </div>
     </div>
   )
