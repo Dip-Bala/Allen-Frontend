@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Advantages from './containers/Advantages';
 import Features from './containers/Features';
 import Feedback from './containers/Feedback';
@@ -12,33 +12,29 @@ import Testimonial from './containers/Testimonial';
 import Trending from './containers/Trending';
 import PopUp from './containers/PopUp';
 
-const style ={
-    display: "flex",
-    flexDirection : "column",
-    alignItems : "center",
-    backgroundColor: "pink"
-}
 export default function Layout() {
-    // const [popUp, showPopUp] = useState(true);
-    // useEffect(() => {
-    //     setInterval(() => {
-    //         showPopUp(popUp => !popUp)
-    //     }, 10000)
-    // }, [])
+  const [popUp, showPopUp] = useState(true);
+  // useEffect(() => {
+  //     setInterval(() => {
+  //         showPopUp(popUp => !popUp)
+  //     }, 10000)
+  // }, [])
   return (
-    <div style={style}>
-        {/* {popUp && <PopUp showPopUp={showPopUp}/>} */}
-        <Navbar/>
-        <Scholarship/>
-        <OnlineCourses/>
-        <Features/>
+    <div className="flex flex-col items-center">
+      {popUp && <PopUp showPopUp={showPopUp} />}
+      <Navbar />
+      <div className="mt-27 w-full">
+        <Scholarship />
+        <OnlineCourses />
+        <FreeTools />
+        {/* <Features/>
         <Trending/>
-        <FreeTools/>
         <Results/>
         <Advantages/>
         <Testimonial/>
         <Feedback/>
-        <Footer/>
+        <Footer/> */}
+      </div>
     </div>
   )
 }

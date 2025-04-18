@@ -5,8 +5,8 @@ export default function PopUp({showPopUp}) {
         showPopUp(curr => !curr)
     }
   return (
-    <div style={{width: 500, height: 500, position: "absolute", top: 150, left: 450, backgroundColor: "gray", borderRadius:10, textAlign: "center"}}>
-        <button onClick={cancelPopUp}>cancel</button>
+    <div className="absolute top-3/12 w-[500px] h-[500px] rounded-xl bg-emerald-500 p-10">
+        <button className="w-5 h-5" onClick={cancelPopUp}><img src="./src/assets/close.png" alt="cancel" /></button>
 
     </div>
   )
