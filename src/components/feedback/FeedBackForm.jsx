@@ -52,7 +52,7 @@ export default function FeedBackForm() {
                     </select>
                 </div>
             </form>
-            <p className="text-center text-sm ">By continuing, you agree to our Terms & Conditions</p>
+            <p className="text-center text-sm ">By continuing, you agree to our Terms&Conditions</p>
             <div className="flex justify-center py-2">
             <button className="bg-blue-700 rounded-3xl text-white font-semibold font-md py-2 w-70 cursor-pointer">Submit</button>
 

@@ -1,38 +1,31 @@
 import React, {useState} from 'react'
 import Login from './Login';
+import CoursesNav from '../components/navbar/CoursesNav';
+import TestSeriesNav from '../components/navbar/TestSeriesNav';
+import ResultsNav from '../components/navbar/ResultsNav';
+import StudyMaterialsNav from '../components/navbar/StudyMaterialsNav';
+import MoreNav from '../components/navbar/MoreNav';
+import BooksNav from '../components/navbar/BooksNav';
 
-const style={
-  height: "100px",
-  backgroundColor: "white",
-  width: "100vw",
-  fontFamily:"sans-serif"
-}
-const upperStyle = {
-  display: "flex", 
-  justifyContent: "space-between", 
-  alignItems: "center", 
-  backgroundColor: "skyblue", 
-  padding: 20
-}
 export default function Navbar() {
   const [isLogin, setIsLogin] = useState(false);
   function showLogin(){
     setIsLogin(!isLogin);
   }
   return (
-    <div className="flex flex-col bg-white w-full fixed">
+    <div className="md:hidden flex flex-col bg-white w-full fixed">
       <div className="flex px-5 py-4 items-center justify-between">
         <div className="flex gap-8 items-center">
         <div className="w-auto h-6 flex">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/ALLEN_Career_Institute_logo.svg/2560px-ALLEN_Career_Institute_logo.svg.png" alt="Allen-logo" />
         </div>
-        <div className="flex gap-10 text-base font-normal">
-          <div className="hover:border-b-4 border-blue-600">Courses</div>
-          <div className="hover:border-b-4 border-blue-600">Test Series</div>
-          <div className="hover:border-b-4 border-blue-600">Results</div>
-          <div className="hover:border-b-4 border-blue-600">Study Material</div>
-          <div className="hover:border-b-4 border-blue-600">Books</div>
-          <div className="hover:border-b-4 border-blue-600">More</div>
+        <div className="flex gap-10 text-base font-normal ">
+          <CoursesNav/>
+          <TestSeriesNav/>
+          <ResultsNav/>
+          <StudyMaterialsNav/>
+          <BooksNav/>
+          <MoreNav/>
         </div>
         </div>
         <div className="flex gap-5">
