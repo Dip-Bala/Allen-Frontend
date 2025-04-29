@@ -13,7 +13,7 @@ export default function Navbar() {
     setIsLogin(!isLogin);
   }
   return (
-    <div className="md:hidden flex flex-col bg-white w-full fixed">
+    <div className="flex flex-col bg-white w-full fixed">
       <div className="flex px-5 py-4 items-center justify-between">
         <div className="flex gap-8 items-center">
         <div className="w-auto h-6 flex">
